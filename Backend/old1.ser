@@ -37,7 +37,7 @@ const pool = new Pool({
     user: 'postgres',
     host: 'postgres',
     database: 'new_employee_db',
-    password: 'admin123',
+    password: 'admin234',
     port: 5432
 });
 
@@ -290,10 +290,10 @@ app.use((err, req, res, next) => {
 
 // Start server
 const PORT = 3407;
-const HOST = '0.0.0.0';
+const HOST = '54.166.5.133';
 
 app.listen(PORT, HOST, async () => {
-    console.log(`🚀 Server running at http://${HOST}:${PORT}`);
+    console.log(`🚀 Server running at http://54.166.5.133:${PORT}`);
     await waitForPostgres();
     await initializeDatabase();
 });
