@@ -290,7 +290,7 @@ app.use((err, req, res, next) => {
 
 // Start server
 const PORT = 3407;
-const HOST = '54.166.5.133';
+const HOST = '0.0.0.0';
 
 app.listen(PORT, HOST, async () => {
     console.log(`🚀 Server running at http://54.166.5.133:${PORT}`);
